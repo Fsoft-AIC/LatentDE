@@ -1,0 +1,11 @@
+*.egg-info
+__pycache__/
+.idea/
+*.log
+*.ckpt
+landscape_params/
+exps/
+lightning_logs/
+wandb/
+results*/
+notebooks/
