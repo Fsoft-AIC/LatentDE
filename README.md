@@ -11,6 +11,7 @@
 - [Usage](#usage)
     - [Training](#training)
     - [Inference](#inference)
+- [Citation](#citation)
 
 ## Introduction
 This is the official implementation of the paper *"Latent-based Directed Evolution accelerated by Gradient Ascent for Protein Sequence Design"*.
@@ -19,6 +20,8 @@ This is the official implementation of the paper *"Latent-based Directed Evoluti
     <img src="static/pipeline.png" alt="Pipeline Overview" width="800"/>
     <p><em>Figure: Overview of the LatentDE pipeline.</em></p>
 </div>
+
+Our paper just got accepted for NeurIPS's workshop!! The pre-print version is available [here](https://www.biorxiv.org/content/10.1101/2024.04.13.589381v2).
 
 ## Structure description
 
@@ -79,3 +82,20 @@ Similar to perform active learning alongside with optimization, you can see deta
 Results will be saved in `exps/results_no_active` and `exps/results` folders.
 
 To average results of 5 seeds, check [`calculate.py`](./scripts/calculate.py).
+
+## Citation
+If you find our work useful for your research, please cite:
+
+```bibtex
+@article {Ngo2024.04.13.589381,
+	author = {Ngo, Nhat Khang and Tran, Thanh V. T. and Duy Nguyen, Viet Thanh and Hy, Truong Son},
+	title = {Latent-based Directed Evolution accelerated by Gradient Ascent for Protein Sequence Design},
+	elocation-id = {2024.04.13.589381},
+	year = {2024},
+	doi = {10.1101/2024.04.13.589381},
+	publisher = {Cold Spring Harbor Laboratory},
+	URL = {https://www.biorxiv.org/content/early/2024/04/18/2024.04.13.589381},
+	eprint = {https://www.biorxiv.org/content/early/2024/04/18/2024.04.13.589381.full.pdf},
+	journal = {bioRxiv}
+}
+```
