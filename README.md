@@ -1,6 +1,6 @@
 <div align="center">
 
-# LatentDE: <u>Latent</u>-based <u>D</u>irected <u>E</u>volution accelerated by Gradient Ascent for Protein Sequence Design
+# LatentDE: <u>Latent</u>-based <u>D</u>irected <u>E</u>volution for Protein Sequence Design
 </div>
 
 ## Table of Contents:
@@ -14,14 +14,12 @@
 - [Citation](#citation)
 
 ## Introduction
-This is the official implementation of the paper *"Latent-based Directed Evolution accelerated by Gradient Ascent for Protein Sequence Design"*.
+This is the official implementation of the paper *"Latent-based Directed Evolution for Protein Sequence Design"*.
 
 <div align="center">
     <img src="static/pipeline.png" alt="Pipeline Overview" width="800"/>
     <p><em>Figure: Overview of the LatentDE pipeline.</em></p>
 </div>
-
-Our paper just got accepted for NeurIPS's workshop!! The pre-print version is available [here](https://www.biorxiv.org/content/10.1101/2024.04.13.589381v2).
 
 ## Structure description
 
@@ -87,15 +85,12 @@ To average results of 5 seeds, check [`calculate.py`](./scripts/calculate.py).
 If you find our work useful for your research, please cite:
 
 ```bibtex
-@article {Ngo2024.04.13.589381,
-	author = {Ngo, Nhat Khang and Tran, Thanh V. T. and Duy Nguyen, Viet Thanh and Hy, Truong Son},
-	title = {Latent-based Directed Evolution accelerated by Gradient Ascent for Protein Sequence Design},
-	elocation-id = {2024.04.13.589381},
-	year = {2024},
-	doi = {10.1101/2024.04.13.589381},
-	publisher = {Cold Spring Harbor Laboratory},
-	URL = {https://www.biorxiv.org/content/early/2024/04/18/2024.04.13.589381},
-	eprint = {https://www.biorxiv.org/content/early/2024/04/18/2024.04.13.589381.full.pdf},
-	journal = {bioRxiv}
+@article{10.1088/2632-2153/adc2e2,
+	author={Tran, Thanh and Ngo, Nhat Khang and Nguyen, Viet Thanh Duy and Hy, Truong-Son},
+	title={LatentDE: Latent-based Directed Evolution for Protein Sequence Design},
+	journal={Machine Learning: Science and Technology},
+	url={http://iopscience.iop.org/article/10.1088/2632-2153/adc2e2},
+	year={2025},
+	abstract={Directed evolution has been the most effective method for protein engineering that optimizes biological functionalities through a resource-intensive process of screening or selecting among a vast range of mutations. To mitigate this extensive procedure, recent advancements in machine learning-guided methodologies center around the establishment of a surrogate sequence-function model. In this paper, we propose Latent-based Directed Evolution (LDE), an evolutionary algorithm designed to prioritize the exploration of high-fitness mutants in the latent space. At its core, LDE is a regularized variational autoencoder (VAE), harnessing the capabilities of the state-of-the-art Protein Language Model (pLM), ESM-2, to construct a meaningful latent space of sequences. From this encoded representation, we present a novel approach for efficient traversal on the fitness landscape, employing a combination of gradient-based methods and directed evolution. Experimental evaluations conducted on eight protein sequence design tasks demonstrate the superior performance of our proposed LDE over previous baseline algorithms.}
 }
 ```
